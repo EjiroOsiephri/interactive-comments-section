@@ -1,0 +1,93 @@
+@use "../global/color" as c;
+@use "../util/functions" as f;
+@use "../util/breakpoints" as u;
+
+.grid {
+  display: grid;
+  gap: f.rem(10);
+  margin-top: f.rem(20);
+  margin-inline: auto;
+
+  .name {
+    font-weight: 700;
+    margin-top: 0;
+    color: c.$Dark-blue;
+    transform: translate(f.rem(55), f.rem(-35));
+  }
+  .createdAt {
+    font-weight: 700;
+    margin-top: 0;
+    color: c.$grayish-blue;
+    transform: translate(f.rem(170), f.rem(-70));
+  }
+  .user-comment {
+    margin-top: 0;
+    margin-top: f.rem(-55);
+    color: c.$grayish-blue;
+  }
+
+  .details-container {
+    margin-left: 0;
+    @include u.breakpoints(medium) {
+      margin-left: f.rem(35);
+    }
+  }
+
+  .first-user-img {
+    width: f.rem(40);
+  }
+  .increment-container {
+    .increment-text {
+      color: blue;
+      font-weight: 600;
+    }
+    .increment-minus-img {
+      transform: translateY(f.rem(-4));
+    }
+
+    width: f.rem(150);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: f.rem(40);
+    height: f.rem(50);
+    background-color: c.$very-light-gray;
+    @include u.breakpoints(medium) {
+      width: 40px;
+      transform: translate(f.rem(-20), f.rem(-120));
+      height: f.rem(150);
+      gap: f.rem(5);
+      margin-left: f.rem(10);
+      display: grid;
+      justify-content: center;
+      background-color: c.$very-light-gray;
+    }
+  }
+
+  &__first-user {
+    width: f.rem(280);
+    border-radius: f.rem(10);
+    height: f.rem(240);
+    padding: f.rem(15);
+    margin-inline: auto;
+    background-color: c.$white;
+
+    @include u.breakpoints(medium) {
+      width: f.rem(600);
+      height: f.rem(150);
+    }
+  }
+  &__second-user {
+    width: f.rem(280);
+    border-radius: f.rem(10);
+    height: f.rem(240);
+    padding: f.rem(15);
+    margin-inline: auto;
+    background-color: c.$white;
+
+    @include u.breakpoints(medium) {
+      width: f.rem(600);
+      height: f.rem(150);
+    }
+  }
+}

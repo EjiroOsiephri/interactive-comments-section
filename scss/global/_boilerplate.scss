@@ -1,0 +1,9 @@
+@use "color" as c;
+
+body {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: c.$light-gray;
+}
