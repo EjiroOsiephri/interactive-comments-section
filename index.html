@@ -36,6 +36,8 @@
   <body>
     <!-- Pull dynamic content from the data.json file -->
     <div class="grid">
+      <!-- third container grid/ div class -->
+
       <div class="grid__first-user">
         <div class="details-container">
           <img
@@ -59,7 +61,15 @@
             <img src="images/icon-minus.svg" alt="" />
           </p>
         </div>
+
+        <div class="reply">
+          <img src="images/icon-reply.svg" alt="" />
+          <span>reply</span>
+        </div>
       </div>
+
+      <!-- second container grid/ div class -->
+
       <div class="grid__second-user">
         <div class="details-container">
           <img
@@ -83,9 +93,102 @@
             <img src="images/icon-minus.svg" alt="" />
           </p>
         </div>
+        <div class="reply">
+          <img src="images/icon-reply.svg" alt="" />
+          <span>reply</span>
+        </div>
       </div>
-      <div class="grid__third-user"></div>
-      <div class="grid__personal-user"></div>
+
+      <!-- third container grid/ div class -->
+
+      <div class="grid__third-user">
+        <div class="details-container">
+          <img
+            src="images/avatars/image-ramsesmiron.png"
+            class="first-user-img"
+            alt=""
+          />
+          <p class="name">Ramsesmiron</p>
+          <p class="createdAt">1 month ago</p>
+          <p class="user-comment">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            consequatur modi excepturi, tempore nemo quam aliquid?
+          </p>
+        </div>
+        <div class="increment-container">
+          <p class="increment-plus-img">
+            <img src="images/icon-plus.svg" alt="" />
+          </p>
+          <p class="increment-text">0</p>
+          <p class="increment-minus-img">
+            <img src="images/icon-minus.svg" alt="" />
+          </p>
+        </div>
+        <div class="reply">
+          <img src="images/icon-reply.svg" alt="" />
+          <span>reply</span>
+        </div>
+      </div>
+
+      <!-- personal container grid/ div class -->
+
+      <div class="grid__personal-user">
+        <div class="details-container">
+          <img
+            src="images/avatars/image-juliusomo.png"
+            class="first-user-img"
+            alt=""
+          />
+          <p class="name">Juliusomo</p>
+          <span class="myColor">You</span>
+          <p class="createdAt">1 month ago</p>
+          <p class="user-comment">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            consequatur modi excepturi, tempore nemo quam aliquid?
+          </p>
+        </div>
+        <div class="increment-container">
+          <p class="increment-plus-img">
+            <img src="images/icon-plus.svg" alt="" />
+          </p>
+          <p class="increment-text">0</p>
+          <p class="increment-minus-img">
+            <img src="images/icon-minus.svg" alt="" />
+          </p>
+        </div>
+        <div class="reply">
+          <img src="images/icon-reply.svg" alt="" />
+          <span>reply</span>
+        </div>
+        <div class="adjust">
+          <div class="delete">
+            <img src="images/icon-delete.svg" alt="" />
+            <span>Delete</span>
+          </div>
+          <div class="edit">
+            <img src="images/icon-edit.svg" alt="" />
+            <span>edit</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- My comments section -->
+
+      <div class="grid__textbox-container">
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          placeholder="Add a comment..."
+          rows="10"
+        ></textarea>
+        <img
+          src="images/avatars/image-juliusomo.png"
+          class="first-user-img"
+          alt=""
+        />
+        <button class="send">Send</button>
+      </div>
     </div>
 
     <div class="attribution">
